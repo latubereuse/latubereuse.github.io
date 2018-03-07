@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Salade</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700'
+    rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+  <header class="container">
+    <section class="jumbotron" >
+      <figure class="col-sm-12 text-center">
+        <h1>La cuisine de Maryam</h1>
+        <div class="row text-left">
+          <figure class="col-sm-12 text-center">
+            <h2>Les salades</h2>
+          </figure>
+        </div>
+      </figure>
+    </section>
+    <section class="container">
+      <div class="row">
+        <figure class="col-sm-3">
+          <p>Borani</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Borani.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Guacamole</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Guacamole.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Mastokhiar</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Mastokhiar.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Salade Cézar</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Salade Cézar.jpg"/>
+        </figure>
+      </div>
+      <div class="row">
+        <figure class="col-sm-3">
+          <p>Salade de bettrave</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Salade de bettrave.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Salade de chou</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Salade de chou.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Salade de laitue</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Salade de laitue.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Salade de pomme</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Salade de pomme.jpg"/>
+        </figure>
+      </div>
+      <div class="row">
+        <figure class="col-sm-3">
+          <p>Salade de quinoa</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Salade de quinoa.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Salade d'épinard</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Salade d'épinard.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Salade d'orzo</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Salade d'orzo.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Salade Olivier</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Salade Olivier.jpg"/>
+        </figure>
+      </div>
+      <div class="row">
+        <figure class="col-sm-3">
+          <p>Salade Shirazi</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Salade Shirazi.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Tabouli</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Tabouli.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Yaourt</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Yaourt.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Yaourt à l'ail</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Yaourt à l'ail.jpg"/>
+        </figure>
+      </div>
+    </section>
+  </header>
+  <footer class="container">
+    <div class="row">
+      <figure class="col-sm-4">
+        <a href="Main.htm" target="_top"><h3>Retour</h3></a>
+      </figure>
+    </div>
+  </footer>
+  <script>
+    function bigImg(x) {
+      x.style.height = "324px";
+      x.style.width = "432px";
+      x.style.zIndex = "-1";
+    }
+    function normalImg(x) {
+      x.style.height = "162px";
+      x.style.width = "216px";
+      x.style.zIndex = "1";
+    }
+  </script>
+</body>
+</html>

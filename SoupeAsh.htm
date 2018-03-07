@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SoupeAsh</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700'
+    rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+  <header class="container">
+    <section class="jumbotron" >
+      <figure class="col-sm-12 text-center">
+        <h1>La cuisine de Maryam</h1>
+        <div class="row text-left">
+          <figure class="col-sm-12 text-center">
+            <h2>Les Soupes/Ashs</h2>
+          </figure>
+        </div>
+      </figure>
+    </section>
+    <section class="container">
+      <div class="row">
+        <figure class="col-sm-3">
+          <p>Adassi</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Adassi.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Ash de blé</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Ash de blé.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Ash de navet</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Ash de navet.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Ash de yaourt</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Ash de yaourt.jpg"/>
+        </figure>
+      </div>
+      <div class="row">
+        <figure class="col-sm-3">
+          <p>Ash d'orge</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Ash d'orge.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Ash Reshteh</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Ash Reshteh.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Ash Sholeh Ghalamkar</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Ash Sholeh Ghalamkar.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Borsh</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Borsh.jpg"/>
+        </figure>
+      </div>
+      <div class="row">
+        <figure class="col-sm-3">
+          <p>Soupe de brocoli</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Soupe de brocoli.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Soupe de carrotte</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Soupe de carrotte.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Soupe de la mariée</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Soupe de la mariée.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Soupe de poireau</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Soupe de poireau.jpg"/>
+        </figure>
+      </div>
+      <div class="row">
+        <figure class="col-sm-3">
+          <p>Soupe de vermishel</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Soupe de vermishel.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Soupe d'orge</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Soupe d'orge.jpg"/>
+        </figure>
+      </div>
+    </section>
+  </header>
+  <footer class="container">
+    <div class="row">
+      <figure class="col-sm-4">
+        <a href="Main.htm" target="_top"><h3>Retour</h3></a>
+      </figure>
+    </div>
+  </footer>
+  <script>
+    function bigImg(x) {
+      x.style.height = "324px";
+      x.style.width = "432px";
+      x.style.zIndex = "-1";
+    }
+    function normalImg(x) {
+      x.style.height = "162px";
+      x.style.width = "216px";
+      x.style.zIndex = "1";
+    }
+  </script>
+</body>
+</html>
