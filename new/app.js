@@ -1,11 +1,23 @@
 angular
 .module('MaryamApp', [])
-.config(['$locationProvider', $provider => $provider.html5Mode({enabled: true, requireBase: false})])
 .controller('MaryamCtrl', ['$scope', '$http', '$location',
 function($scope, $http, $location) {
-	$scope.hello = "test";
+	$scope.homepage = true;
+	$scope.data = {};
+
+	$scope.setPage = (category) => {
+		$location.path('/' + category.replace(/\s/g, '-'));
+		$scope.category = category;
+		$scope.homepage = false;
+	}
 
 	$http.get('food.json').then((response) => {
-		console.log(data);
+		$scope.data = response.data;
+	});
+
+	$scope.$watch(() => $location.path(), (page) => {
+		page = page.replace('/', '');
+		$scope.homepage = (page === '');
+		$scope.category = page.replace(/-/g, ' ');
 	});
 }]);

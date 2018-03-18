@@ -1,5 +1,5 @@
 {
-	"Fast Food": [
+	"Fast food": [
 		"Burger de bœuf",
 		"Burger de poulet",
 		"Club Sandwich",
@@ -20,7 +20,6 @@
 		"Chicken Tikka Masala",
 		"Escalope Permisian",
 		"Fettucini",
-		"Filet mignon et patates",
 		"Gratin de champignons et croquettes de poulet",
 		"Gratin de pommes de terre et croquettes de poisson",
 		"Indian Cutlets",
@@ -73,7 +72,7 @@
 		"Riz aux petits poids",
 		"Riz aux vesces",
 		"Riz aux vinettes et poulet",
-		"Tah Chin",
+		"Tah Chin"
 	],
 
 	"Ragoût": [
@@ -105,7 +104,6 @@
 		"Ferni",
 		"Gâteau au citron",
 		"Gelée",
-		"Halim",
 		"Mousse chocolat",
 		"Sholeh Zard",
 		"Tarte de poire",
@@ -132,7 +130,6 @@
 	],
 
 	"Soupe/Ash": [
-		"Adassi",
 		"Ash de blé",
 		"Ash de navet",
 		"Ash de yaourt",
