@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fast Food</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700'
+    rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+  <header class="container">
+    <section class="jumbotron" >
+      <figure class="col-sm-12 text-center">
+        <h1>La cuisine de Maryam</h1>
+        <div class="row text-left">
+          <figure class="col-sm-12 text-center">
+            <h2>Les Fast Foods</h2>
+          </figure>
+        </div>
+      </figure>
+    </section>
+    <section class="container">
+      <div class="row">
+        <figure class="col-sm-3">
+          <p>Burger de bœuf</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Burger de bœuf.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Burger de poulet</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Burger de poulet.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Club Sandwich</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Club Sandwich.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Croque Monsieur</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Croque Monsieur.jpg"/>
+        </figure>
+      </div>
+      <div class="row">
+        <figure class="col-sm-3">
+          <p>Fajita</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Fajita.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Hot Dog</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Hot Dog.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Mergueze</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Mergueze.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Nachos</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Nachos.jpg"/>
+        </figure>
+      </div>
+      <div class="row">
+        <figure class="col-sm-3">
+          <p>Poutine</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Poutine.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Salade d'œuf</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Salade d'œuf.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Subway</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Subway.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Tacos</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Tacos.jpg"/>
+        </figure>
+      </div>
+    </section>
+  </header>
+  <footer class="container">
+    <div class="row">
+      <figure class="col-sm-4">
+        <a href="index.html" target="_top"><h3>Retour</h3></a>
+      </figure>
+    </div>
+  </footer>
+  <script>
+    function bigImg(x) {
+      x.style.height = "324px";
+      x.style.width = "432px";
+      x.style.zIndex = "-1";
+    }
+    function normalImg(x) {
+      x.style.height = "162px";
+      x.style.width = "216px";
+      x.style.zIndex = "1";
+    }
+  </script>
+</body>
+</html>

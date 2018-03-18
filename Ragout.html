@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ragoût</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700'
+    rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+  <header class="container">
+    <section class="jumbotron" >
+      <figure class="col-sm-12 text-center">
+        <h1>La cuisine de Maryam</h1>
+        <div class="row text-left">
+          <figure class="col-sm-12 text-center">
+            <h2>Les Ragoûts</h2>
+          </figure>
+        </div>
+      </figure>
+    </section>
+    <section class="container">
+      <div class="row">
+        <figure class="col-sm-3">
+        <p>Bijbij</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Bijbij.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Fessenjan</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Fessenjan.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Gheymeh</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Gheymeh.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Ghormeh Sabzi</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Ghormeh Sabzi.jpg"/>
+        </figure>
+      </div>
+      <div class="row">
+        <figure class="col-sm-3">
+          <p>Kabab Gerd</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Kabab Gerd.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Kabab Tabei</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Kabab Tabei.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Kaleh Gonjeshki</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Kaleh Gonjeshki.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Morgh Torsh</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Morgh Torsh.jpg"/>
+        </figure>
+      </div>
+      <div class="row">
+        <figure class="col-sm-3">
+          <p>Pichak Gheymeh</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Pichak Gheymeh.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Ragôut d'aubergine</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Ragôut d'aubergine.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Ragôut de celeri</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Ragôut de celeri.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Ragôut de champignon</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Ragôut de champignon.jpg"/>
+        </figure>
+      </div>
+      <div class="row">
+        <figure class="col-sm-3">
+          <p>Ragôut de courgette</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Ragôut de courgette.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Ragôut de gombo</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Ragôut de gombo.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Ragôut de poulet et prune</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Ragôut de poulet et prune.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Ragôut de rhubarbe</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Ragôut de rhubarbe.jpg"/>
+        </figure>
+      </div>
+      <div class="row">
+        <figure class="col-sm-3">
+          <p>Ragôut d'épinard et de prune</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Ragôut d'épinard et de prune.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Ragôut d'haricot vert</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Ragôut d'haricot vert.jpg"/>
+        </figure>
+        <figure class="col-sm-3">
+          <p>Taas Kabab</p>
+          <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="food/Taas Kabab.jpg"/>
+        </figure>
+      </div>
+    </section>
+  </header>
+  <footer class="container">
+    <div class="row">
+      <figure class="col-sm-4">
+        <a href="index.html" target="_top"><h3>Retour</h3></a>
+      </figure>
+    </div>
+  </footer>
+  <script>
+    function bigImg(x) {
+      x.style.height = "324px";
+      x.style.width = "432px";
+      x.style.zIndex = "-1";
+    }
+    function normalImg(x) {
+      x.style.height = "162px";
+      x.style.width = "216px";
+      x.style.zIndex = "1";
+    }
+  </script>
+</body>
+</html>
