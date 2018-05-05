@@ -50,6 +50,11 @@ section + section {
 .food img {
   border-radius:5px;
   width: 250px;
+  transition: transform 0.3s;
+}
+
+.zoom img:hover {
+  transform: scale(2);
 }
 
 figure p {

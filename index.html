@@ -32,9 +32,9 @@
 
   <!-- Category page -->
   <section ng-if="!homepage" class="container fade-transition">
-    <figure ng-repeat="food in data[category]" class="food">
+    <figure ng-repeat="food in data[category]" class="food zoom">
       <p>{{food}}</p>
-      <img ng-src="/food/small/{{food}}.jpg"/>
+      <img ng-src="/food/small/{{food}}.jpg"/ ng-mouseover="updateImg($event)">
     </figure>
   </section>
 
