@@ -25,7 +25,7 @@
     <figure ng-repeat="(category, foods) in data" class="food">
       <p>{{category}}</p>
       <a ng-click="setPage(category)">
-        <img ng-src="/food/{{foods[0]}}.jpg"/>
+        <img ng-src="/food/small/{{foods[0]}}.jpg"/>
       </a>
     </figure>
   </section>
@@ -34,7 +34,7 @@
   <section ng-if="!homepage" class="container">
     <figure ng-repeat="food in data[category]" class="food">
       <p>{{food}}</p>
-      <img ng-src="/food/{{food}}.jpg"/>
+      <img ng-src="/food/small/{{food}}.jpg"/>
     </figure>
   </section>
 
