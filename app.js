@@ -1,7 +1,8 @@
 angular
-.module('MaryamApp', [])
+.module('MaryamApp', ['ngAnimate'])
 .controller('MaryamCtrl', ['$scope', '$http', '$location',
 function($scope, $http, $location) {
+  $scope.location = $location;
   $scope.homepage = true;
   $scope.data = {};
 
@@ -19,5 +20,6 @@ function($scope, $http, $location) {
     page = page.replace('/', '');
     $scope.homepage = (page === '');
     $scope.category = page.replace(/-/g, ' ');
+    window.scrollTo({top: 0, behavior: "smooth"});
   });
 }]);

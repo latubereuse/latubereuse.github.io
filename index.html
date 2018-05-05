@@ -21,7 +21,7 @@
   </header>
 
   <!-- Home page -->
-  <section ng-if="homepage" class="container">
+  <section ng-if="homepage" class="container fade-transition">
     <figure ng-repeat="(category, foods) in data" class="food">
       <p>{{category}}</p>
       <a ng-click="setPage(category)">
@@ -31,7 +31,7 @@
   </section>
 
   <!-- Category page -->
-  <section ng-if="!homepage" class="container">
+  <section ng-if="!homepage" class="container fade-transition">
     <figure ng-repeat="food in data[category]" class="food">
       <p>{{food}}</p>
       <img ng-src="/food/small/{{food}}.jpg"/>
@@ -39,16 +39,17 @@
   </section>
 
   <footer class="container">
-    <a href="mailto:m.erfani@yahoo.com?Subject=Hello%20again">
+    <a href="mailto:m.erfani@yahoo.com?Subject=My%20food%20picks">
       <h3>Envoyez votre choix ici</h3>
     </a>
 
-    <a ng-if="!homepage" href="#/">
+    <a ng-if="!homepage" ng-click="location.path('/')">
       <h3>Retour</h3>
     </a>
   </footer>
 
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-animate.min.js"></script>
   <script type="text/javascript" src="app.js"></script>
 </body>
 </html>

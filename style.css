@@ -32,6 +32,13 @@ a {
   text-align: center;
 }
 
+section + section {
+  position: absolute;
+  top: 530px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .food {
   display: inline-block;
   text-align: center;
@@ -58,4 +65,17 @@ footer h3 {
   font-family: Segoe Print, 'Segoe Print', serif;
   font-size: 2rem;
   color: black;
+}
+
+/* page transitions*/
+.fade-transition.ng-leave { transition: opacity ease-in 0.2s; }
+.fade-transition.ng-enter { transition: opacity ease-out 0.2s 0.3s; }
+
+.fade-transition.ng-enter,
+.fade-transition.ng-leave.ng-leave-active {
+  opacity: 0;
+}
+.fade-transition.ng-leave,
+.fade-transition.ng-enter.ng-enter-active {
+  opacity: 1;
 }
