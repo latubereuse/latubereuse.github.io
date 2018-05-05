@@ -1,0 +1,81 @@
+body {
+  font-family: Calibri, 'Calibri', serif;
+  font-weight: 300;
+}
+
+a {
+  cursor: pointer;
+}
+
+.jumbotron {
+  background-image: url("/food/Cuisine.jpg");
+  background-size: cover;
+  display: flex;
+  height: 500px;
+  text-shadow: 0 0 2px black;
+}
+
+.jumbotron h1 {
+  font-weight: 600;
+  color: red;
+  font-size: 6rem;
+  padding: 40px;
+}
+
+.jumbotron h2 {
+  font-family: Segoe Print, 'Segoe Print', serif;
+  color: green;
+  padding: 10px;
+}
+
+.container {
+  text-align: center;
+}
+
+section + section {
+  position: absolute;
+  top: 530px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.food {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 16pt;
+  width: 298px;
+}
+
+.food img {
+  border-radius:5px;
+  width: 250px;
+}
+
+figure p {
+  padding: 0 20px;
+  margin: 0;
+}
+
+footer {
+  margin-bottom: 10px;
+}
+
+footer h3 {
+  font-family: Segoe Print, 'Segoe Print', serif;
+  font-size: 2rem;
+  color: black;
+}
+
+/* page transitions*/
+.fade-transition.ng-leave { transition: opacity ease-in 0.2s; }
+.fade-transition.ng-enter { transition: opacity ease-out 0.2s 0.3s; }
+
+.fade-transition.ng-enter,
+.fade-transition.ng-leave.ng-leave-active {
+  opacity: 0;
+}
+.fade-transition.ng-leave,
+.fade-transition.ng-enter.ng-enter-active {
+  opacity: 1;
+}
