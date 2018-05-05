@@ -1,13 +1,14 @@
 body {
   font-family: Calibri, 'Calibri', serif;
   font-weight: 300;
-  padding: 10px 10px;
-  margin: 10px 10px;
-  align-items: left;
+}
+
+a {
+  cursor: pointer;
 }
 
 .jumbotron {
-  background-image: url("food/Cuisine.jpg");
+  background-image: url("/food/Cuisine.jpg");
   background-size: cover;
   display: flex;
   height: 500px;
@@ -47,6 +48,10 @@ body {
 figure p {
   padding: 0 20px;
   margin: 0;
+}
+
+footer {
+  margin-bottom: 10px;
 }
 
 footer h3 {

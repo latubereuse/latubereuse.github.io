@@ -1,72 +1,40 @@
 <!DOCTYPE html>
-<html>
-<!--My first project-->
+<html lang="en" ng-app="MaryamApp">
 <head>
   <title>La cuisine de Maryam</title>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=700">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="Style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body ng-controller="MaryamCtrl" ng-cloak>
   <header class="container">
     <section class="jumbotron text-center">
       <figure class="col-sm-12">
         <h1>La cuisine de Maryam</h1>
-        <h2>Vous-êtes invité chez moi?</h2>
-        <h2>A vous de choisir!</h2>
+        <h2 ng-if="homepage">Vous-êtes invité chez moi?</h2>
+        <h2 ng-if="homepage">A vous de choisir!</h2>
+
+        <h2 ng-if="!homepage">{{category}}</h2>
       </figure>
     </section>
   </header>
 
-  <section class="container">
-    <figure class="food">
-      <p>Fast Food</p>
-      <a href="FastFood.html">
-        <img src="food/Poutine.jpg"/>
+  <!-- Home page -->
+  <section ng-if="homepage" class="container">
+    <figure ng-repeat="(category, foods) in data" class="food">
+      <p>{{category}}</p>
+      <a ng-click="setPage(category)">
+        <img ng-src="/food/{{foods[0]}}.jpg"/>
       </a>
     </figure>
-    <figure class="food">
-      <p>Plat du monde</p>
-      <a href="Platdumonde.html">
-        <img src="food/Escalope Permisian.jpg"/>
-      </a>
-    </figure>
-    <figure class="food">
-      <p>Plat sans riz</p>
-      <a href="Platsansriz.html">
-        <img src="food/Kotlet.jpg"/>
-      </a>
-    </figure>
-    <figure class="food">
-      <p>Riz mixe</p>
-      <a href="Rizmixe.html">
-        <img src="food/Riz aux lentilles.jpg"/>
-      </a>
-    </figure>
-    <figure class="food">
-      <p>Ragoût</p>
-      <a href="Ragout.html">
-        <img src="food/Ragôut de celeri.jpg"/>
-      </a>
-    </figure>
-    <figure class="food">
-      <p>Dessert</p>
-      <a href="Dessert.html">
-        <img src="food/Tiramissu.jpg"/>
-      </a>
-    </figure>
-    <figure class="food">
-      <p>Salade</p>
-      <a href="Salade.html">
-        <img src="food/Salade Shirazi.jpg"/>
-      </a>
-    </figure>
-    <figure class="food">
-      <p>Soupe/Ash</p>
-      <a href="SoupeAsh.html">
-        <img src="food/Ash de blé.jpg"/>
-      </a>
+  </section>
+
+  <!-- Category page -->
+  <section ng-if="!homepage" class="container">
+    <figure ng-repeat="food in data[category]" class="food">
+      <p>{{food}}</p>
+      <img ng-src="/food/{{food}}.jpg"/>
     </figure>
   </section>
 
@@ -74,6 +42,13 @@
     <a href="mailto:m.erfani@yahoo.com?Subject=Hello%20again">
       <h3>Envoyez votre choix ici</h3>
     </a>
+
+    <a ng-if="!homepage" href="#/">
+      <h3>Retour</h3>
+    </a>
   </footer>
+
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
 </body>
 </html>

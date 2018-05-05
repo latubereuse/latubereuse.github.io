@@ -1,0 +1,56 @@
+body {
+  font-family: Calibri, 'Calibri', serif;
+  font-weight: 300;
+  padding: 10px 10px;
+  margin: 10px 10px;
+  align-items: left;
+}
+
+.jumbotron {
+  background-image: url("food/Cuisine.jpg");
+  background-size: cover;
+  display: flex;
+  height: 500px;
+  text-shadow: 0 0 2px black;
+}
+
+.jumbotron h1 {
+  font-weight: 600;
+  color: red;
+  font-size: 6rem;
+  padding: 40px;
+}
+
+.jumbotron h2 {
+  font-family: Segoe Print, 'Segoe Print', serif;
+  color: green;
+  padding: 10px;
+}
+
+.container {
+  text-align: center;
+}
+
+.food {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 16pt;
+  width: 298px;
+}
+
+.food img {
+  border-radius:5px;
+  width: 250px;
+}
+
+figure p {
+  padding: 0 20px;
+  margin: 0;
+}
+
+footer h3 {
+  font-family: Segoe Print, 'Segoe Print', serif;
+  font-size: 2rem;
+  color: black;
+}
